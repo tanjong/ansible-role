@@ -1,0 +1,7 @@
+---
+# tasks file for nginx
+ - name: update package
+   apt:  update_cache=yes state=latest
+    
+ - name: install "{{app_name}}"
+   apt:  name="{{app_name}}" state=latest
